@@ -1360,3 +1360,58 @@ footer::before{
         font-size:23px;
     }
 }
+
+/* ===========================
+   NOSSO CARRO
+=========================== */
+
+.nosso-carro{
+    padding:100px 10%;
+    text-align:center;
+    background:#080808;
+}
+
+.nosso-carro img{
+    width:100%;
+    max-width:1400px;
+    display:block;
+    margin:40px auto 30px;
+    border-radius:16px;
+    border:1px solid rgba(57,255,20,.18);
+    box-shadow:0 20px 60px rgba(0,0,0,.55);
+}
+
+.carro-info h3{
+    font-size:30px;
+    margin-bottom:10px;
+}
+
+.carro-info p{
+    font-size:18px;
+    color:#bdbdbd;
+}
+
+@media (max-width:768px){
+
+    .nosso-carro{
+        padding:80px 20px;
+    }
+
+    .nosso-carro img{
+        margin-top:30px;
+        border-radius:10px;
+    }
+
+    .carro-info h3{
+        font-size:24px;
+    }
+
+    .carro-info p{
+        font-size:16px;
+    }
+}
+
+.numeros > .btn-verde{
+    display:inline-block;
+    margin-top:45px;
+}
