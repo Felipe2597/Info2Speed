@@ -1643,3 +1643,483 @@ footer::before{
         width: 100%;
     }
 }
+/* ===========================
+   CAMPEONATOS
+=========================== */
+
+.campeonatos {
+    padding: 100px 10%;
+    background:
+        radial-gradient(
+            circle at 50% 30%,
+            rgba(57, 255, 20, 0.06),
+            transparent 45%
+        ),
+        #080808;
+}
+
+.campeonatos .section-title {
+    margin-bottom: 55px;
+    text-align: center;
+}
+
+.campeonatos .section-title h2 {
+    margin-bottom: 18px;
+    color: #ffffff;
+    font-size: clamp(2.3rem, 5vw, 4rem);
+    letter-spacing: 4px;
+}
+
+.campeonatos .section-title > span {
+    display: block;
+    width: 520px;
+    height: 4px;
+    margin: 0 auto;
+    border-radius: 10px;
+    background: #39ff14;
+    box-shadow: 0 0 15px rgba(57, 255, 20, 0.45);
+}
+
+.campeonatos-subtitulo {
+    margin-top: 22px;
+    color: #bcbcbc;
+    font-size: 1.05rem;
+}
+
+.campeonato-card {
+    max-width: 1100px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1.4fr 0.8fr;
+    overflow: hidden;
+    border: 1px solid rgba(57, 255, 20, 0.2);
+    border-radius: 22px;
+    background: #101010;
+    box-shadow: 0 25px 65px rgba(0, 0, 0, 0.45);
+}
+
+.campeonato-principal {
+    padding: 50px;
+}
+
+.campeonato-status {
+    display: inline-flex;
+    align-items: center;
+    gap: 9px;
+    margin-bottom: 35px;
+    padding: 8px 14px;
+    color: #39ff14;
+    border: 1px solid rgba(57, 255, 20, 0.6);
+    border-radius: 30px;
+    font-size: 0.75rem;
+    font-weight: 700;
+    letter-spacing: 1.2px;
+    text-transform: uppercase;
+}
+
+.status-ponto {
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background: #39ff14;
+    box-shadow: 0 0 10px rgba(57, 255, 20, 0.8);
+}
+
+.campeonato-organizacao {
+    margin-bottom: 8px;
+    color: #39ff14;
+    font-size: 0.9rem;
+    font-weight: 700;
+    letter-spacing: 3px;
+}
+
+.campeonato-principal h3 {
+    margin: 0;
+    color: #ffffff;
+    font-size: clamp(2.5rem, 5vw, 4.5rem);
+    line-height: 1;
+    letter-spacing: 3px;
+}
+
+.campeonato-categoria {
+    margin-top: 13px;
+    color: #bcbcbc;
+    font-size: 1.1rem;
+}
+
+.campeonato-dados {
+    margin-top: 45px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px;
+}
+
+.campeonato-item {
+    padding-top: 18px;
+    border-top: 1px solid rgba(255, 255, 255, 0.12);
+}
+
+.campeonato-item span {
+    display: block;
+    margin-bottom: 9px;
+    color: #8d8d8d;
+    font-size: 0.72rem;
+    font-weight: 700;
+    letter-spacing: 1.2px;
+    text-transform: uppercase;
+}
+
+.campeonato-item strong {
+    display: block;
+    color: #ffffff;
+    font-size: 1.05rem;
+}
+
+.campeonato-item small {
+    display: block;
+    margin-top: 4px;
+    color: #39ff14;
+    font-size: 0.85rem;
+}
+
+.campeonato-botoes {
+    margin-top: 42px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 14px;
+}
+
+.btn-campeonato {
+    min-width: 180px;
+    padding: 13px 22px;
+    border-radius: 8px;
+    text-align: center;
+    text-decoration: none;
+    font-weight: 700;
+    transition: 0.25s ease;
+}
+
+.btn-principal {
+    color: #050505;
+    background: #39ff14;
+    border: 1px solid #39ff14;
+}
+
+.btn-principal:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 0 22px rgba(57, 255, 20, 0.35);
+}
+
+.btn-secundario {
+    color: #ffffff;
+    border: 1px solid rgba(57, 255, 20, 0.8);
+}
+
+.btn-secundario:hover {
+    color: #050505;
+    background: #39ff14;
+    transform: translateY(-2px);
+}
+
+.campeonato-resultado {
+    padding: 50px 38px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    border-left: 1px solid rgba(57, 255, 20, 0.18);
+    background:
+        radial-gradient(
+            circle at center,
+            rgba(57, 255, 20, 0.14),
+            transparent 65%
+        ),
+        #090909;
+}
+
+.resultado-titulo {
+    color: #9a9a9a;
+    font-size: 0.75rem;
+    font-weight: 700;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+.resultado-posicao {
+    margin: 15px 0 10px;
+    color: #39ff14;
+    font-size: clamp(5rem, 9vw, 7.5rem);
+    line-height: 0.9;
+    text-shadow: 0 0 30px rgba(57, 255, 20, 0.3);
+}
+
+.campeonato-resultado h4 {
+    margin: 0;
+    color: #ffffff;
+    font-size: 1.25rem;
+}
+
+.campeonato-resultado p {
+    margin: 10px 0 3px;
+    color: #a9a9a9;
+}
+
+.resultado-pista {
+    color: #39ff14;
+    font-size: 1.05rem;
+    font-weight: 700;
+}
+
+.resultado-piloto {
+    margin-top: 28px;
+    padding-top: 18px;
+    width: 100%;
+    color: #c4c4c4;
+    border-top: 1px solid rgba(255, 255, 255, 0.12);
+    font-size: 0.9rem;
+}
+
+/* RESPONSIVO */
+
+@media (max-width: 850px) {
+    .campeonatos {
+        padding: 80px 6%;
+    }
+
+    .campeonato-card {
+        grid-template-columns: 1fr;
+    }
+
+    .campeonato-principal,
+    .campeonato-resultado {
+        padding: 38px 24px;
+    }
+
+    .campeonato-dados {
+        grid-template-columns: 1fr;
+    }
+
+    .campeonato-resultado {
+        border-top: 1px solid rgba(57, 255, 20, 0.18);
+        border-left: none;
+    }
+
+    .campeonato-botoes {
+        flex-direction: column;
+    }
+
+    .btn-campeonato {
+        width: 100%;
+    }
+}
+/* ===========================
+   RESUMO DA TEMPORADA
+=========================== */
+
+.resultado-resumo {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 12px;
+    margin: 28px 0;
+}
+
+.resumo-item {
+    padding: 16px 8px;
+    border: 1px solid rgba(57, 255, 20, 0.16);
+    border-radius: 12px;
+    background: rgba(57, 255, 20, 0.035);
+}
+
+.resumo-item strong {
+    display: block;
+    color: #39ff14;
+    font-size: 2.2rem;
+    line-height: 1;
+}
+
+.resumo-item span {
+    display: block;
+    margin-top: 8px;
+    color: #bcbcbc;
+    font-size: 0.7rem;
+    font-weight: 700;
+    letter-spacing: 0.8px;
+    text-transform: uppercase;
+}
+
+.melhor-resultado,
+.resultado-destaque {
+    width: 100%;
+    padding: 20px 0;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.melhor-resultado span,
+.resultado-destaque span {
+    display: block;
+    margin-bottom: 8px;
+    color: #999999;
+    font-size: 0.72rem;
+    font-weight: 700;
+    letter-spacing: 1.4px;
+    text-transform: uppercase;
+}
+
+.melhor-resultado strong {
+    display: block;
+    color: #39ff14;
+    font-size: 4.6rem;
+    line-height: 1;
+    text-shadow: 0 0 25px rgba(57, 255, 20, 0.3);
+}
+
+.resultado-destaque strong {
+    display: block;
+    color: #ffffff;
+    font-size: 1.35rem;
+}
+
+.melhor-resultado p,
+.resultado-destaque p {
+    margin-top: 8px;
+    color: #bcbcbc;
+    font-size: 0.9rem;
+}
+
+/* ===========================
+   RESULTADOS POR ETAPA
+=========================== */
+
+.resultados-temporada {
+    max-width: 1100px;
+    margin: 55px auto 0;
+}
+
+.resultados-titulo {
+    margin-bottom: 28px;
+    text-align: center;
+}
+
+.resultados-titulo h3 {
+    color: #ffffff;
+    font-size: clamp(1.8rem, 4vw, 2.8rem);
+    letter-spacing: 2px;
+}
+
+.resultados-titulo p {
+    margin-top: 8px;
+    color: #39ff14;
+}
+
+.grid-resultados {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 22px;
+}
+
+.etapa-card {
+    padding: 26px;
+    border: 1px solid rgba(57, 255, 20, 0.16);
+    border-radius: 18px;
+    background: linear-gradient(145deg, #111111, #080808);
+    transition: 0.3s ease;
+}
+
+.etapa-card:hover {
+    transform: translateY(-6px);
+    border-color: rgba(57, 255, 20, 0.55);
+    box-shadow: 0 18px 40px rgba(57, 255, 20, 0.09);
+}
+
+.etapa-destaque {
+    border-color: rgba(57, 255, 20, 0.45);
+    box-shadow: 0 0 30px rgba(57, 255, 20, 0.06);
+}
+
+.etapa-cabecalho {
+    margin-bottom: 24px;
+    padding-bottom: 18px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.etapa-cabecalho span {
+    display: block;
+    margin-bottom: 7px;
+    color: #39ff14;
+    font-size: 0.72rem;
+    font-weight: 700;
+    letter-spacing: 1.5px;
+}
+
+.etapa-cabecalho h4 {
+    color: #ffffff;
+    font-size: 1.25rem;
+}
+
+.corrida-resultado {
+    display: grid;
+    grid-template-columns: 1.3fr 0.7fr 0.7fr;
+    align-items: center;
+    gap: 10px;
+    padding: 15px 0;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.07);
+}
+
+.corrida-resultado:last-child {
+    border-bottom: none;
+}
+
+.corrida-resultado > span {
+    color: #c4c4c4;
+    font-size: 0.9rem;
+}
+
+.corrida-resultado div {
+    text-align: center;
+}
+
+.corrida-resultado strong {
+    display: block;
+    color: #ffffff;
+    font-size: 1.15rem;
+}
+
+.corrida-resultado small {
+    display: block;
+    margin-top: 3px;
+    color: #8f8f8f;
+    font-size: 0.65rem;
+    text-transform: uppercase;
+}
+
+.corrida-resultado .proam strong {
+    color: #39ff14;
+}
+
+.destaque-vitoria {
+    margin: 5px -10px 0;
+    padding: 15px 10px;
+    border-radius: 10px;
+    background: rgba(57, 255, 20, 0.045);
+}
+
+@media (max-width: 850px) {
+    .grid-resultados {
+        grid-template-columns: 1fr;
+    }
+
+    .resultado-resumo {
+        grid-template-columns: 1fr;
+    }
+}
+.resultados-titulo span{
+    display:block;
+    width:min(690px,85%);
+    height:4px;
+    margin:18px auto 22px;
+    border-radius:20px;
+    background:#39ff14;
+    box-shadow:0 0 15px rgba(57,255,20,.45);
+}

@@ -396,78 +396,247 @@
 
 </section>
 
-        <!-- ===========================
-             CAMPEONATOS
-        ============================ -->
-        <section id="campeonatos" class="campeonatos">
+       <!-- ===========================
+        CAMPEONATOS
+============================ -->
+<section id="campeonatos" class="campeonatos">
 
     <div class="section-title">
         <h2>CAMPEONATOS</h2>
-        <div class="linha-verde"></div>
-        <p>Acompanhe a Info2Speed Racing nas competições atuais.</p>
+        <span></span>
+
+        <p class="campeonatos-subtitulo">
+            Acompanhe a Info2Speed Racing nas competições atuais.
+        </p>
     </div>
 
-    <div class="grid-campeonatos">
+    <div class="campeonato-card">
 
-        <div class="camp-card camp-destaque">
+        <!-- LADO ESQUERDO -->
+        <div class="campeonato-principal">
 
-            <span class="camp-tag">TEMPORADA EM ANDAMENTO</span>
+            <div class="campeonato-status">
+                <span class="status-ponto"></span>
+                Temporada em andamento
+            </div>
 
-            <h3>🏎️ FÓRMULA 4 F1BC</h3>
+            <p class="campeonato-organizacao">F1BC</p>
 
-            <p class="camp-categoria">
+            <h3>FÓRMULA 4</h3>
+
+            <p class="campeonato-categoria">
                 Categoria ProAm
             </p>
 
-            <div class="camp-informacoes">
+            <div class="campeonato-dados">
 
-                <div class="camp-item">
-                    <span>PILOTO OFICIAL</span>
+                <div class="campeonato-item">
+                    <span>Piloto oficial</span>
                     <strong>Daniel Ferreira</strong>
                 </div>
 
-                <div class="camp-item">
-                    <span>CARRO</span>
+                <div class="campeonato-item">
+                    <span>Número</span>
                     <strong>#49</strong>
                 </div>
 
-                <div class="camp-item">
-                    <span>PRÓXIMA ETAPA</span>
-                    <strong>Tsukuba — 30/07</strong>
+                <div class="campeonato-item">
+                    <span>Próxima etapa</span>
+                    <strong>Tsukuba</strong>
+                    <small>30/07</small>
                 </div>
 
             </div>
 
-            <div class="camp-resultado">
-
-                <div class="resultado-numero">P1</div>
-
-                <div>
-                    <span>ÚLTIMO DESTAQUE</span>
-                    <strong>Vencedor da Corrida 2</strong>
-                    <p>2ª etapa — Silverstone</p>
-                </div>
-
-            </div>
-
-            <div class="camp-botoes">
+            <div class="campeonato-botoes">
 
                 <a href="https://www.youtube.com/watch?v=han82VUWiRQ"
                    target="_blank"
-                   rel="noopener noreferrer">
-                    ▶ Transmissão
+                   rel="noopener noreferrer"
+                   class="btn-campeonato btn-principal">
+                    Assistir transmissão
                 </a>
 
                 <a href="https://f1bc.racehub.com.br/championships/688"
                    target="_blank"
-                   rel="noopener noreferrer">
-                    📅 Calendário
+                   rel="noopener noreferrer"
+                   class="btn-campeonato btn-secundario">
+                    Ver calendário
                 </a>
+
             </div>
+
         </div>
+
+        <!-- LADO DIREITO -->
+       <div class="campeonato-resultado">
+
+    <span class="resultado-titulo">
+        Resumo da temporada
+    </span>
+
+    <div class="resultado-resumo">
+
+        <div class="resumo-item">
+            <strong>3</strong>
+            <span>Etapas</span>
+        </div>
+
+        <div class="resumo-item">
+            <strong>6</strong>
+            <span>Corridas</span>
+        </div>
+
+        <div class="resumo-item">
+            <strong>3</strong>
+            <span>Vitórias ProAm</span>
+        </div>
+
     </div>
 
+    <div class="melhor-resultado">
+
+        <span>Melhor resultado geral</span>
+        <strong>P2</strong>
+        <p>Spa-Francorchamps • Corrida 2</p>
+
+    </div>
+
+    <div class="resultado-destaque">
+
+        <span>Últimas 3 corridas</span>
+        <strong>P1 ProAm</strong>
+        <p>Silverstone R2 • Spa R1 • Spa R2</p>
+
+      </div>
+      </div>
+</div>
+<div class="resultados-temporada">
+
+    <div class="resultados-titulo">
+        <h3>RESULTADOS DA TEMPORADA</h3>
+        <span></span>
+        <p>F1BC Fórmula 4 ProAm</p>
+    </div>
+
+    <div class="grid-resultados">
+
+        <article class="etapa-card">
+
+            <div class="etapa-cabecalho">
+                <span>ETAPA 1</span>
+                <h4>BARCELONA</h4>
+            </div>
+
+            <div class="corrida-resultado">
+                <span>Corrida 1</span>
+
+                <div>
+                    <strong>P8</strong>
+                    <small>Geral</small>
+                </div>
+
+                <div class="proam">
+                    <strong>P2</strong>
+                    <small>ProAm</small>
+                </div>
+            </div>
+
+            <div class="corrida-resultado">
+                <span>Corrida 2</span>
+
+                <div>
+                    <strong>P7</strong>
+                    <small>Geral</small>
+                </div>
+
+                <div class="proam">
+                    <strong>P3</strong>
+                    <small>ProAm</small>
+                </div>
+            </div>
+
+        </article>
+
+        <article class="etapa-card">
+
+            <div class="etapa-cabecalho">
+                <span>ETAPA 2</span>
+                <h4>SILVERSTONE</h4>
+            </div>
+
+            <div class="corrida-resultado">
+                <span>Corrida 1</span>
+
+                <div>
+                    <strong>P9</strong>
+                    <small>Geral</small>
+                </div>
+
+                <div class="proam">
+                    <strong>P3</strong>
+                    <small>ProAm</small>
+                </div>
+            </div>
+
+            <div class="corrida-resultado destaque-vitoria">
+                <span>Corrida 2</span>
+
+                <div>
+                    <strong>P5</strong>
+                    <small>Geral</small>
+                </div>
+
+                <div class="proam">
+                    <strong>P1</strong>
+                    <small>ProAm</small>
+                </div>
+            </div>
+
+        </article>
+
+        <article class="etapa-card etapa-destaque">
+
+            <div class="etapa-cabecalho">
+                <span>ETAPA 3</span>
+                <h4>SPA-FRANCORCHAMPS</h4>
+            </div>
+
+            <div class="corrida-resultado destaque-vitoria">
+                <span>Corrida 1</span>
+
+                <div>
+                    <strong>P3</strong>
+                    <small>Geral</small>
+                </div>
+
+                <div class="proam">
+                    <strong>P1</strong>
+                    <small>ProAm</small>
+                </div>
+            </div>
+
+            <div class="corrida-resultado destaque-vitoria">
+                <span>Corrida 2</span>
+
+                <div>
+                    <strong>P2</strong>
+                    <small>Geral</small>
+                </div>
+
+                <div class="proam">
+                    <strong>P1</strong>
+                    <small>ProAm</small>
+                </div>
+            </div>
+
+        </article>
+
+    </div>
+
+</div>
 </section>
+
         <!-- ===========================
              CHAMADA PARA A EQUIPE
         ============================ -->
