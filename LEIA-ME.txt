@@ -1,0 +1,1 @@
+Copie index.html, style.css e script.js para a pasta do seu projeto, substituindo os arquivos antigos. Preserve a pasta assets/ com as imagens. O Porsche usa assets/porsche-992-gt3r.png. Os resultados GT3 de Road Atlanta ainda nao foram informados.

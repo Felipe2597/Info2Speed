@@ -2196,3 +2196,37 @@ html { scroll-padding-top: 105px; }
 .gt3-campeonato__detalhes strong { color:#fff; font-size:1.1rem; }
 .gt3-campeonato__nota { color:#a7a7a7; font-size:.85rem; line-height:1.6; }
 @media(max-width:768px) { .gt3-campeonato{padding:26px 20px;} .gt3-campeonato__detalhes{grid-template-columns:1fr;} html{scroll-padding-top:20px;} }
+
+
+/* ==================================================
+   GT3 SPRINT 2026 E TITULO F4 PROAM - INFO2SPEED
+================================================== */
+.gt3-pilotos{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:20px;margin:32px 0 42px}
+.gt3-piloto{display:flex;align-items:center;gap:22px;padding:24px;background:#101010;border:1px solid rgba(57,255,20,.25);border-radius:14px}
+.gt3-numero{color:#39ff14;font-size:clamp(2rem,4vw,2.8rem);font-weight:800;letter-spacing:-2px}
+.gt3-piloto h4{color:#fff;font-size:1.2rem;margin-bottom:6px}
+.gt3-piloto p{color:#bcbcbc;font-size:.9rem}
+.gt3-calendario-titulo{color:#fff;font-size:1.3rem;letter-spacing:2px;margin-bottom:22px}
+.gt3-calendario{display:grid;gap:10px}
+.gt3-etapa{display:grid;grid-template-columns:45px minmax(0,1fr) 75px auto;align-items:center;gap:15px;padding:17px 20px;border:1px solid #282828;border-radius:10px;background:#101010}
+.gt3-etapa>span{color:#39ff14;font-weight:800}
+.gt3-etapa strong{color:#fff;font-size:.95rem}
+.gt3-etapa time{color:#ccc;font-size:.9rem}
+.gt3-etapa small{color:#aaa;font-size:.78rem}
+.gt3-etapa.proxima{border-color:#39ff14;background:rgba(57,255,20,.07)}
+.gt3-etapa.proxima small{color:#39ff14;font-weight:700}
+.gt3-etapa.concluida{opacity:.7}
+.gt3-link-oficial{display:inline-block;margin-top:28px;padding:15px 26px;background:#39ff14;color:#050505;border-radius:8px;text-decoration:none;font-weight:800;transition:.3s}
+.gt3-link-oficial:hover{background:#70ff54;transform:translateY(-3px)}
+.gt3-campeonato__nota{margin-top:22px}
+.f4-titulo-conquista{margin:25px 0 30px;padding:25px;text-align:center;background:linear-gradient(135deg,#192b12,#0b0b0b);border:1px solid #39ff14;border-radius:14px}
+.f4-titulo-conquista span{display:block;color:#39ff14;font-size:1.35rem;font-weight:800;margin-bottom:10px}
+.f4-titulo-conquista strong{display:block;color:#fff;font-size:1.05rem;letter-spacing:1px}
+.f4-titulo-conquista p{color:#ccc;margin-top:12px;line-height:1.6}
+@media(max-width:768px){
+.gt3-pilotos{grid-template-columns:1fr}
+.gt3-piloto{padding:20px}
+.gt3-etapa{grid-template-columns:30px minmax(0,1fr) 65px;gap:8px;padding:15px 12px}
+.gt3-etapa small{grid-column:2/-1}
+.gt3-etapa strong{font-size:.85rem}
+}
