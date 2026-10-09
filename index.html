@@ -16,13 +16,11 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
 
     <!-- Favicon -->
-   <link rel="icon" href="/favicon.ico" sizes="any">
-<link rel="icon" type="image/png" href="/assets/favicon.png">
-<link rel="apple-touch-icon" href="/assets/favicon.png">
+   <link rel="icon" href="favicon.ico" sizes="any">
+<link rel="icon" type="image/png" href="assets/favicon.png">
+<link rel="apple-touch-icon" href="assets/favicon.png">
 
     <!-- SEO -->
-    <meta name="description"
-        content="Equipe brasileira de automobilismo virtual dedicada ao desenvolvimento de pilotos, competições de endurance, sprint e construção de uma comunidade apaixonada por velocidade.">
      <meta name="keywords"
         content="Info2Speed, Info2Speed Racing, iRacing, Automobilismo Virtual, GT3, Endurance, Sim Racing, Porsche Cup, F4, Corridas Online">
      <meta name="author" content="Info2Speed Racing Team">
@@ -72,6 +70,7 @@
             <a href="#sobre">Equipe</a>
             <a href="#pilotos">Membros</a>
             <a href="#campeonatos">Campeonatos</a>
+            <a href="#carros">Carros</a>
             <a href="#patrocinadores">Patrocinadores</a>
             <a href="#contato">Contato</a>
         </nav>
@@ -93,7 +92,7 @@
 
             <p class="hero-subtitle">
                 Transformando paixão pelo automobilismo virtual em trabalho em equipe, evolução constante nos resultados
-                nas pistas.
+                e resultados nas pistas.
             </p>
 
          <div class="hero-buttons">
@@ -117,7 +116,7 @@
   <!-- ===========================
      PARCEIROS E PATROCINADORES
 =========================== -->
-<section class="numeros">
+<section id="patrocinadores" class="numeros">
 
     <h2>CONSTRUA ESSA HISTÓRIA CONOSCO</h2>
 
@@ -183,8 +182,6 @@
     <a href="mailto:Info2Speedracing@gmail.com" class="btn-verde">
         SEJA NOSSO PARCEIRO
     </a>
-
-</section>
 
 </section>
         <!-- ===========================
@@ -376,7 +373,7 @@
         <!-- ===========================
      NOSSOS CARROS
 =========================== -->
-<section class="nosso-carro">
+<section id="carros" class="nosso-carro">
 
     <div class="section-title">
         <h2>NOSSOS CARROS</h2>
@@ -416,9 +413,24 @@
         <span></span>
 
         <p class="campeonatos-subtitulo">
-            Acompanhe a Info2Speed Racing nas competições atuais.
+            Acompanhe nossos campeonatos, participações e resultados.
         </p>
     </div>
+
+
+    <article class="gt3-campeonato">
+      <div class="gt3-campeonato__cabecalho">
+        <span class="gt3-campeonato__etiqueta">F1BC • GT3</span>
+        <h3>GT3 — DOIS CARROS NA PISTA</h3>
+        <p>A Info2Speed Racing participa da competição de GT3 da F1BC com dois carros. Um novo capítulo do nosso projeto de endurance e corridas sprint.</p>
+      </div>
+      <div class="gt3-campeonato__detalhes">
+        <div><span>Categoria</span><strong>GT3</strong></div>
+        <div><span>Organização</span><strong>F1BC</strong></div>
+        <div><span>Inscrições</span><strong>2 carros</strong></div>
+      </div>
+      <p class="gt3-campeonato__nota">Pilotos, números, calendário e resultados serão publicados após a confirmação dos dados oficiais da equipe.</p>
+    </article>
 
     <div class="campeonato-card">
 
@@ -427,7 +439,7 @@
 
             <div class="campeonato-status">
                 <span class="status-ponto"></span>
-                Temporada em andamento
+                Temporada 2026 • Histórico
             </div>
 
             <p class="campeonato-organizacao">F1BC</p>
@@ -451,7 +463,7 @@
                 </div>
 
                 <div class="campeonato-item">
-                    <span>Próxima etapa</span>
+                    <span>Etapa registrada</span>
                     <strong>Tsukuba</strong>
                     <small>30/07</small>
                 </div>
@@ -659,7 +671,7 @@
                 apaixonada por automobilismo virtual.
             </p>
 
-            <a href="https://discord.gg/fGmyjqn9EB" class="btn-verde">
+            <a href="https://discord.gg/fGmyjqn9EB" target="_blank" rel="noopener noreferrer" class="btn-verde">
                 ENTRAR NA EQUIPE
             </a>
 
@@ -670,7 +682,7 @@
     <!-- ===========================
          RODAPÉ
     ============================ -->
-    <footer>
+    <footer id="contato">
 
         <img src="assets/Logo team racing.png" class="footer-logo" alt="Info2Speed Racing">
 
@@ -693,10 +705,6 @@
 
             <a href="mailto:Info2Speedracing@gmail.com">
                 Contato
-            </a>
-
-            <a href="#">
-                Twitch
             </a>
 
         </div>

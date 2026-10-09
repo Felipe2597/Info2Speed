@@ -2183,3 +2183,16 @@ footer::before{
     background:#39ff14;
     box-shadow:0 0 15px rgba(57,255,20,.45);
 }
+/* Atualização Info2Speed — GT3 e ajustes de navegação */
+html { scroll-padding-top: 105px; }
+#patrocinadores, #carros, #campeonatos, #pilotos, #sobre, #contato { scroll-margin-top: 105px; }
+.gt3-campeonato { max-width:1100px; margin:0 auto 34px; padding:42px; text-align:left; border:1px solid rgba(57,255,20,.28); border-radius:22px; background:linear-gradient(125deg,#142010,#0b0b0b 55%); box-shadow:0 20px 55px rgba(0,0,0,.35); }
+.gt3-campeonato__etiqueta { color:#39ff14; font-size:.82rem; font-weight:800; letter-spacing:.16em; }
+.gt3-campeonato h3 { font-size:clamp(1.65rem,3.5vw,2.8rem); margin:14px 0; color:#fff; }
+.gt3-campeonato__cabecalho p { color:#cfcfcf; line-height:1.75; max-width:780px; }
+.gt3-campeonato__detalhes { display:grid; grid-template-columns:repeat(3,minmax(0,1fr)); gap:16px; margin:30px 0 18px; }
+.gt3-campeonato__detalhes div { border-top:1px solid #404040; padding-top:14px; }
+.gt3-campeonato__detalhes span { display:block; color:#999; font-size:.8rem; margin-bottom:8px; }
+.gt3-campeonato__detalhes strong { color:#fff; font-size:1.1rem; }
+.gt3-campeonato__nota { color:#a7a7a7; font-size:.85rem; line-height:1.6; }
+@media(max-width:768px) { .gt3-campeonato{padding:26px 20px;} .gt3-campeonato__detalhes{grid-template-columns:1fr;} html{scroll-padding-top:20px;} }
