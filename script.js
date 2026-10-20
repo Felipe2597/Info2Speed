@@ -61,7 +61,7 @@ if (etapas.length) {
             etiqueta = document.createElement("small");
             elemento.appendChild(etiqueta);
         }
-        if (realizada) etiqueta.textContent = "Realizada";
+        if (realizada) etiqueta.textContent = elemento.dataset.resultados === "true" ? "Resultados disponíveis" : "Realizada";
         else if (jaPassou) etiqueta.textContent = "Resultado pendente";
         else if (proxima?.elemento === elemento) etiqueta.textContent = "Próxima etapa";
         else if (elemento.dataset.final === "true") etiqueta.textContent = "Final";

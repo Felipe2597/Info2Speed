@@ -2295,3 +2295,163 @@ img { max-width: 100%; height: auto; }
         letter-spacing: 1px;
     }
 }
+
+
+/* RESULTADOS GT3 SPRINT — MOSPORT • 13/10/2026 */
+.gt3-resultados { margin-top: 34px; padding: 28px; border: 1px solid #303b2c; border-radius: 16px; background: #0a1009; }
+.gt3-resultados__cabecalho > span { display: block; color: #39ff14; font-size: .75rem; font-weight: 800; letter-spacing: .12em; }
+.gt3-resultados__cabecalho h4 { color: #fff; font-size: clamp(1.2rem, 2.5vw, 1.65rem); margin: 9px 0 10px; }
+.gt3-resultados__cabecalho p { color: #bfc5bd; line-height: 1.55; }
+.gt3-resultados__grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 15px; margin-top: 24px; }
+.gt3-resultado-card { min-width: 0; padding: 22px; border: 1px solid #303030; border-radius: 13px; background: #101410; }
+.gt3-resultado-card__classe { color: #39ff14; font-size: .8rem; font-weight: 800; letter-spacing: .07em; }
+.gt3-resultado-card h5 { color: #fff; font-size: 1.25rem; margin: 9px 0 22px; }
+.gt3-resultado-status { display: flex; align-items: baseline; gap: 15px; flex-wrap: wrap; }
+.gt3-resultado-status strong, .gt3-baterias strong { color: #f0a3a3; font-size: 1.45rem; }
+.gt3-resultado-status span { color: #c5c5c5; font-size: .9rem; }
+.gt3-baterias { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 12px; }
+.gt3-baterias > div { border-top: 1px solid #3a3a3a; padding-top: 10px; }
+.gt3-baterias span { display: block; color: #c2c2c2; font-size: .85rem; margin-bottom: 5px; }
+.gt3-baterias strong { display: block; }
+.gt3-resultados__legenda { color: #9d9d9d; font-size: .8rem; line-height: 1.6; margin-top: 20px; }
+.gt3-resultados__legenda strong { color: #ccc; }
+@media (max-width: 720px) {
+  .gt3-resultados { padding: 20px 14px; }
+  .gt3-resultados__grid { grid-template-columns: 1fr; }
+  .gt3-resultado-card { padding: 20px 16px; }
+}
+
+
+/* =======================================================
+   F4 PROAM 2026 — TÍTULO CONQUISTADO
+   Acompanhe estes estilos no final de style.css quando
+   quiser aprender a modificar esta seção no VS Code.
+======================================================= */
+html { scroll-padding-top: 110px; }
+#f4-campeao { scroll-margin-top: 110px; }
+
+/* Chamada clicável para o título já na página inicial. */
+.hero-conquista-link {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px;
+    max-width: 100%;
+    margin: 0 0 24px;
+    padding: 11px 18px;
+    border: 1px solid rgba(57,255,20,.46);
+    border-radius: 999px;
+    background: rgba(12,28,10,.86);
+    color: #e8ffe3;
+    font-size: clamp(.76rem, 1.6vw, .94rem);
+    font-weight: 800;
+    letter-spacing: .07em;
+    line-height: 1.45;
+    text-decoration: none;
+    box-shadow: 0 0 20px rgba(57,255,20,.09);
+    transition: transform .22s, border-color .22s, background .22s;
+    animation: fadeUp .8s ease 1s both;
+}
+.hero-conquista-link:hover,
+.hero-conquista-link:focus-visible {
+    transform: translateY(-2px);
+    border-color: #39ff14;
+    background: rgba(23,54,17,.95);
+}
+.hero-conquista-seta { color: #39ff14; }
+
+/* F4 é um título histórico, não um campeonato em andamento. */
+.f4-campeonato { margin-top: 42px; border-color: rgba(57,255,20,.4); }
+.f4-campeonato .campeonato-principal { text-align: left; }
+.f4-campeonato .campeonato-status { margin-bottom: 28px; }
+.f4-status-encerrado { color: #e1e1e1; border-color: rgba(255,255,255,.25); }
+.f4-status-encerrado .status-ponto { background: #aaaaaa; box-shadow: 0 0 8px rgba(255,255,255,.25); }
+.f4-campeonato .campeonato-organizacao { font-size: .78rem; letter-spacing: .14em; }
+.f4-campeonato .f4-titulo-conquista {
+    margin: 24px 0 0;
+    padding: clamp(24px, 4vw, 38px);
+    border: 1px solid rgba(57,255,20,.65);
+    border-radius: 18px;
+    background: linear-gradient(145deg,#203719 0%, #10230c 36%, #090b09 100%);
+    box-shadow: 0 18px 44px rgba(0,0,0,.24), inset 0 0 42px rgba(57,255,20,.04);
+}
+.f4-campeonato .f4-trofeu {
+    display: block;
+    font-size: clamp(2.5rem, 5vw, 3.3rem);
+    line-height: 1.1;
+    margin-bottom: 14px;
+}
+.f4-campeonato .f4-campeao-etiqueta {
+    display: block;
+    margin-bottom: 10px;
+    color: #bcffab;
+    font-size: .76rem;
+    letter-spacing: .15em;
+    font-weight: 800;
+}
+.f4-campeonato .f4-titulo-conquista strong {
+    display: block;
+    color: #fff;
+    font-size: clamp(1.9rem, 3.2vw, 2.7rem);
+    line-height: 1.08;
+    letter-spacing: .03em;
+    text-shadow: 0 0 28px rgba(57,255,20,.15);
+}
+.f4-campeonato .f4-titulo-conquista p {
+    max-width: 45ch;
+    margin: 16px auto 0;
+    color: #e2e8e0;
+    font-size: .96rem;
+    line-height: 1.65;
+}
+.f4-campeonato .campeonato-dados { margin-top: 30px; }
+.f4-campeonato .campeonato-item { min-width: 0; }
+.f4-campeonato .campeonato-item strong { overflow-wrap: anywhere; }
+.f4-campeonato .campeonato-botoes { margin-top: 34px; }
+.f4-campeonato .btn-campeonato { min-width: 0; }
+
+.f4-resumo-tag {
+    color: #39ff14;
+    font-size: .76rem;
+    font-weight: 800;
+    letter-spacing: .16em;
+}
+.f4-resumo h4 { margin-top: 12px; line-height: 1.35; }
+.f4-resumo .f4-recorte-label {
+    margin-top: 14px;
+    color: #bdbdbd;
+    font-size: .85rem;
+    line-height: 1.6;
+}
+.f4-campeonato .resultado-resumo { grid-template-columns: repeat(3,minmax(0,1fr)); }
+.f4-campeonato .resumo-item { min-width: 0; }
+.f4-campeonato .resumo-item strong { font-size: clamp(1.6rem,2.5vw,2.2rem); }
+.f4-campeonato .resumo-item span { overflow-wrap: anywhere; font-size: .63rem; letter-spacing: 0; line-height: 1.4; }
+.f4-final strong { color: #bcffab; font-size: clamp(1rem,2vw,1.3rem); line-height: 1.35; }
+.f4-resultados-aviso {
+    max-width: 800px;
+    margin: 8px auto 0;
+    color: #999;
+    font-size: .85rem;
+    line-height: 1.55;
+}
+@media (max-width: 1050px) {
+    .f4-campeonato .campeonato-dados { grid-template-columns: repeat(2,minmax(0,1fr)); }
+}
+@media (max-width: 850px) {
+    #f4-campeao { scroll-margin-top: 18px; }
+    .f4-campeonato .campeonato-dados { grid-template-columns: 1fr; }
+    .f4-campeonato .campeonato-principal,
+    .f4-campeonato .campeonato-resultado { padding: 34px 24px; }
+    .f4-campeonato .resultado-resumo { grid-template-columns: repeat(3,minmax(0,1fr)); }
+}
+@media (max-width: 480px) {
+    .hero-conquista-link { font-size: .7rem; padding: 10px 12px; gap: 7px; }
+    .f4-campeonato .resultado-resumo { grid-template-columns: 1fr; }
+    .f4-campeonato .campeonato-botoes { flex-direction: column; }
+    .f4-campeonato .btn-campeonato { width: 100%; }
+}
+@media (prefers-reduced-motion: reduce) {
+    .hero-conquista-link { animation: none; }
+}
