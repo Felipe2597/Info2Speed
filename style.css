@@ -2230,3 +2230,68 @@ html { scroll-padding-top: 105px; }
 .gt3-etapa small{grid-column:2/-1}
 .gt3-etapa strong{font-size:.85rem}
 }
+
+
+/* =============================================================
+   Manutenção 20/10/2026: navegação, calendário e acessibilidade
+   Mantém o visual original da Info2Speed Racing.
+============================================================= */
+a:focus-visible,
+button:focus-visible {
+    outline: 3px solid var(--verde);
+    outline-offset: 5px;
+}
+
+/* Ajustes de media fluidos: evitar imagens ultrapassando a tela. */
+img { max-width: 100%; height: auto; }
+.gt3-etapa.passada { opacity: .82; }
+.gt3-etapa.passada small { color: #bcbcbc; }
+.gt3-etapa small:empty { display: none; }
+
+/* Botão inserido pelo JavaScript. Se JS falhar, o menu continua visível. */
+.menu-toggle { display: none; }
+@media (max-width: 768px) {
+    header.tem-menu-mobile { position: relative; padding-right: 20px; }
+    header.tem-menu-mobile .logo { align-self: flex-start; }
+    header.tem-menu-mobile .menu-toggle {
+        position: absolute;
+        top: 28px;
+        right: 20px;
+        display: inline-flex;
+        align-items: center;
+        gap: 10px;
+        padding: 10px 13px;
+        border: 1px solid rgba(57, 255, 20, .6);
+        border-radius: 9px;
+        background: #121912;
+        color: #fff;
+        font: 700 14px Inter, sans-serif;
+        cursor: pointer;
+    }
+    .menu-toggle__barras { display: grid; gap: 4px; }
+    .menu-toggle__barras span { width: 19px; height: 2px; background: var(--verde); border-radius: 2px; }
+    header.tem-menu-mobile nav { display: none; width: 100%; flex-direction: column; align-items: stretch; gap: 0; }
+    header.tem-menu-mobile.menu-aberto nav { display: flex; }
+    header.tem-menu-mobile nav a {
+        display: block;
+        padding: 13px 7px;
+        border-bottom: 1px solid #262626;
+        font-size: 15px;
+    }
+    header.tem-menu-mobile nav a::after { display: none; }
+    header.tem-menu-mobile nav a:last-child { border-bottom: 0; }
+    .gt3-etapa { min-width: 0; }
+}
+@media (prefers-reduced-motion: reduce) {
+    html { scroll-behavior: auto; }
+    *, *::before, *::after { animation-duration: .01ms !important; animation-iteration-count: 1 !important; transition-duration: .01ms !important; }
+}
+
+/* Linha dos campeonatos sem vazamento lateral em celulares de 320 px. */
+.campeonatos .section-title > span { max-width: 100%; }
+@media (max-width: 480px) {
+    .campeonatos .section-title h2 {
+        font-size: clamp(1.45rem, 7.5vw, 1.9rem);
+        letter-spacing: 1px;
+    }
+}
