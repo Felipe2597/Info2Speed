@@ -39,8 +39,11 @@ if (header) {
 
 // Atualiza automaticamente a próxima data do calendário cadastrada no HTML.
 // NÃO inventa resultados nem declara uma etapa realizada sem confirmação.
-const etapas = Array.from(document.querySelectorAll(".gt3-etapa"));
-if (etapas.length) {
+// Cada campeonato calcula a sua própria próxima etapa.
+// Para cadastrar novas etapas: acrescente blocos com classe gt3-etapa ou cup992-etapa.
+document.querySelectorAll(".gt3-calendario, .cup992-calendario").forEach(calendario => {
+    const etapas = Array.from(calendario.querySelectorAll(".gt3-etapa, .cup992-etapa"));
+    if (!etapas.length) return;
     const hoje = new Date();
     hoje.setHours(0, 0, 0, 0);
     const registros = etapas.map(elemento => {
@@ -67,4 +70,4 @@ if (etapas.length) {
         else if (elemento.dataset.final === "true") etiqueta.textContent = "Final";
         else etiqueta.textContent = "";
     });
-}
+});
