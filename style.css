@@ -2588,3 +2588,10 @@ html {
     color: white;
     transform: translateY(-3px);
 }
+
+/* Ajuste da navegação entre campeonatos */
+#gt3-sprint,
+#992-cup,
+#f4-campeao {
+    scroll-margin-top: 130px;
+}
