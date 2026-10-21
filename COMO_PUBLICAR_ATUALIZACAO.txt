@@ -1,0 +1,13 @@
+INFO2SPEED — ATUALIZAÇÃO DO SITE
+
+1. Faça backup da pasta GitHub atual.
+2. Extraia o ZIP e copie o CONTEÚDO da pasta GitHub para a pasta atual, substituindo arquivos com os mesmos nomes.
+3. Não apague a pasta .git que já existe no seu computador. O ZIP não inclui .git.
+4. Teste index.html, equipe.html, campeonatos.html, garagem.html e pilotos.html no navegador.
+5. No VS Code, use o Git para conferir as alterações antes de fazer commit e push.
+
+Mudanças: criadas páginas Campeonatos e Pilotos com conteúdo original do site; menu unificado; Garagem conectada; página inicial preservada e com links para as novas páginas; Equipe preservada como Nossa História.
+
+Importante: o conteúdo de campeonatos e pilotos ainda está também na página inicial, para não remover nenhuma informação antiga. Podemos enxugar a home em uma próxima versão após sua aprovação.
+
+Imagens dos carros e patrocinadores não foram modificadas.
