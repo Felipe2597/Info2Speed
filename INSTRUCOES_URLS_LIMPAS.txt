@@ -1,0 +1,11 @@
+INFO2SPEED - URLS SEM .HTML
+
+1. Faça backup da pasta atual antes de substituir.
+2. Copie TODO o conteudo desta pasta para a raiz do seu repositorio GitHub (onde fica o arquivo CNAME).
+3. No VS Code, confirme que as novas pastas campeonatos, equipe, garagem e pilotos possuem index.html dentro.
+4. Publique as mudancas no GitHub (commit e push). Aguarde o GitHub Pages atualizar.
+5. Teste https://info2speed.com/campeonatos/ e https://info2speed.com/pilotos/ e os links de navegacao.
+6. Os arquivos antigos campeonatos.html, equipe.html, garagem.html e pilotos.html permanecem como redirecionamentos de compatibilidade.
+7. Nao altere DNS ou proxy do Cloudflare para essa mudanca.
+
+NOTA: As URLs sem .html usam barra final (ex.: /campeonatos/). A pagina principal e apenas /.
