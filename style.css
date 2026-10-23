@@ -2596,19 +2596,22 @@ html {
     scroll-margin-top: 130px;
 }
 
-/* AJUSTE DO TEXTO E BOTÃO DA F4 NA HOME */
+/* AJUSTE FINAL - TEXTO F4 NA HOME */
 .f4-resultados-link {
     margin-top: -25px;
-    text-align: center;
     padding-bottom: 35px;
+    text-align: center;
 }
 
 .f4-resultados-link p {
-    margin: 0 auto 22px;
+    display: block;
+    max-width: 760px;
+    margin: 0 auto 28px;
     line-height: 1.7;
-    max-width: 850px;
+    text-align: center;
 }
 
 .f4-resultados-link .btn-campeonato {
     display: inline-block;
+    margin-top: 0;
 }
