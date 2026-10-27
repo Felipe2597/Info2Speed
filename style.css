@@ -2615,3 +2615,87 @@ html {
     display: inline-block;
     margin-top: 0;
 }
+
+/* =========================================================
+   MENU MOBILE PROFISSIONAL — Info2Speed 2026
+   Corrige regras antigas com maior especificidade.
+   Não altera o menu desktop.
+========================================================= */
+@media (max-width: 768px) {
+  html, body { overflow-x: clip; }
+  #header.tem-menu-mobile {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 100%;
+    min-height: 86px;
+    height: auto;
+    padding: 13px 5%;
+    gap: 0;
+    background: #050805;
+    box-shadow: 0 5px 22px rgba(0,0,0,.22);
+    z-index: 1000;
+  }
+  #header.tem-menu-mobile .logo { margin: 0; flex: 0 1 auto; align-self: center; }
+  #header.tem-menu-mobile .logo img { display: block; width: clamp(145px, 42vw, 215px); height: auto; max-height: 75px; object-fit: contain; }
+  #header.tem-menu-mobile .menu-toggle {
+    position: static;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    margin-left: auto;
+    padding: 11px 15px;
+    min-height: 44px;
+    border: 1px solid rgba(57,255,20,.65);
+    border-radius: 11px;
+    background: #101910;
+    color: #fff;
+    font: 700 14px Inter, sans-serif;
+    letter-spacing: .01em;
+    cursor: pointer;
+    transition: background .2s, border-color .2s;
+  }
+  #header.tem-menu-mobile .menu-toggle:active,
+  #header.tem-menu-mobile.menu-aberto .menu-toggle { background: #173015; border-color: #39ff14; }
+  #header.tem-menu-mobile .menu-toggle__barras { display: grid; gap: 4px; }
+  #header.tem-menu-mobile .menu-toggle__barras span { display: block; width: 19px; height: 2px; border-radius: 3px; background: #39ff14; }
+  #header.tem-menu-mobile nav {
+    display: none;
+    order: 3;
+    flex: 0 0 100%;
+    width: 100%;
+    max-width: none;
+    margin: 14px 0 0;
+    padding: 8px 0 4px;
+    border-top: 1px solid rgba(57,255,20,.25);
+    background: transparent;
+    flex-direction: column;
+    align-items: stretch;
+    justify-content: flex-start;
+    gap: 0;
+  }
+  #header.tem-menu-mobile.menu-aberto nav { display: flex; }
+  #header.tem-menu-mobile nav a {
+    display: block;
+    width: 100%;
+    margin: 0;
+    padding: 13px 16px;
+    border-bottom: 1px solid rgba(255,255,255,.08);
+    color: #e9eee8;
+    font-size: 15px;
+    font-weight: 500;
+    line-height: 1.5;
+    text-align: left;
+    text-decoration: none;
+    transition: background .2s, color .2s;
+  }
+  #header.tem-menu-mobile nav a:hover,
+  #header.tem-menu-mobile nav a:focus-visible,
+  #header.tem-menu-mobile nav a[aria-current="page"] { color: #39ff14; background: rgba(57,255,20,.065); }
+  #header.tem-menu-mobile nav a::after { display: none; }
+  #header.tem-menu-mobile nav a:last-child { border-bottom: none; }
+}
