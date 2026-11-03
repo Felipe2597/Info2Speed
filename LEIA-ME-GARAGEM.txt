@@ -1,0 +1,57 @@
+INFO2SPEED RACING — GARAGEM 3 CARROS (02/11/2026)
+
+ATENCAO: estes arquivos nao foram publicados no GitHub.
+Base: versao consolidada do site enviada em 02/11/2026.
+
+NOVA NAVEGACAO:
+- garagem.html -> VITRINE com foto unica de cada carro (GT3 R, 992.2 Cup e F4).
+- gt3r.html -> pagina exclusiva do Porsche GT3 R com 6 fotos, ficha tecnica, pilotos e competicao.
+- 992-cup.html -> pagina exclusiva do Porsche 911 Cup 992.2 com 7 fotos, ficha tecnica e Daniel Ferreira.
+- f4.html -> pagina exclusiva do Formula 4 #49, campanha campea, piloto e ficha resumida.
+- campeonatos.html -> continuam TODOS OS RESULTADOS e os calendarios, com links para as paginas dos carros.
+- index.html -> preservado; imagens do GT3 R/F4 agora podem abrir as fichas correspondentes.
+- garagem-pages.css -> estilos novos, separados para facilitar a edicao no VS Code.
+
+CORRECAO DO LOGO:
+O cabecalho das paginas da Garagem agora utiliza o arquivo oficial que ja existe no site:
+  assets/Logo team racing.png
+Nao substitui o arquivo e nao foi criado novo logo. Se estiver ausente, copie o original de sua pasta assets.
+
+FOTOS:
+- As sete fotos do 992.2 Cup acompanham o ZIP na pasta assets/.
+- As fotos antigas do GT3 R e da F4 NAO acompanham o ZIP e devem continuar na sua pasta assets/:
+  GT3 R: principal.png, lateral.jpg, traseira-34.png, frontal.png, traseira.png, superior.jpg
+  F4: carro-info2speed F4.png
+  Piloto F4: daniel ferreira.png
+- Por enquanto temos apenas UMA foto de referencia de F4 cadastrada; a pagina aceita expansao no futuro.
+- NAO remova nem substitua sua pasta assets antiga. Mescle os sete arquivos da pasta assets do ZIP.
+
+RESULTADOS PRESERVADOS:
+- GT3 Sprint Mosport: Felipe DNS/DNS; Rogerio DNF/DNF.
+- GT3 Sprint The Bend: Felipe DNS/DNS; Rogerio DNS/DNS.
+- 992.2 Cup Austin: Daniel C1 P16 geral / P6 ProAm; C2 P12 geral / P6 ProAm.
+- 992.2 Cup Okayama e Mount Panorama: resultados cadastrados previamente.
+- Formula 4 ProAm: Daniel Ferreira campeao 2026, 6 etapas, 12 corridas, 6 vitorias ProAm, P2 melhor geral.
+- Proximas etapas a 02/11/2026: Algarve 09/11; Spa 10/11.
+
+COMO INSTALAR:
+1. Copie sua pasta Site Info2speed como backup.
+2. Compare index.html e campeonatos.html com os seus arquivos atuais: a base do projeto foi fornecida em 21/10.
+3. Copie os HTML e garagem-pages.css para a raiz do projeto.
+4. MESCLAR a pasta assets do ZIP com sua pasta assets existente, sem apagar os arquivos antigos.
+5. Abra garagem.html no navegador e confira os três cards; depois visite cada pagina.
+6. No GitHub, faca commit e publique somente apos sua revisao.
+
+COMO EDITAR NO VS CODE:
+- Novos carros: garagem.html, procurar por <article class="vehicle-card">.
+- Fotos 992 Cup: 992-cup.html, localizar o array 'const images'.
+- Fotos GT3 R: gt3r.html, localizar o array 'const images'.
+- Ficha tecnica F4 e piloto: f4.html, procurar por 'FICHA DO CARRO'.
+- Aparencia das novas paginas: garagem-pages.css.
+- Resultados: campeonatos.html (sem necessidade de mexer nas fichas dos carros).
+
+FONTES DAS FICHAS TECNICAS:
+GT3 R: https://racing.porsche.com/cars/911-gt3-r-992
+992.2 Cup: https://racing.porsche.com/en-GB/cars/911-cup-2026
+FIA F4: https://www.iracing.com/cars/fia-f4/
+Especificacoes de referencia da versao real ou modelo do simulador; nao sao valores dinamicos de setups/BoP.

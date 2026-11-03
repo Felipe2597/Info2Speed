@@ -1,0 +1,50 @@
+INFO2SPEED RACING - 02/11/2026
+GALERIA 992.2 CUP + REVISAO DOS CAMPEONATOS
+
+ANTES DE PUBLICAR: faça backup da pasta do site!
+Nao houve nenhuma alteração no GitHub ou site publico automaticamente.
+
+CONTEUDO DO ZIP
+- garagem.html: mantém a galeria GT3 R e ganha seletor dos carros.
+- 992-cup.html: NOVA pagina com as sete fotos do Porsche Cup, no mesmo estilo do GT3 R.
+- index.html: adiciona vitrine do Porsche Cup na home, sem retirar o GT3 R ou F4.
+- campeonatos.html: calendario atualizado (GT3 Spa 10/11; Cup Algarve 09/11) e resultados confirmados pela equipe.
+- info2speed-992.css: estilos isolados da vitrine do novo carro.
+- assets/cup992-*.png: fotografias fornecidas pelo usuario, copiadas sem alterações.
+
+INSTALACAO NO PROJETO ATUAL
+1. Compare o index.html, campeonatos.html e garagem.html com os arquivos existentes.
+   Estes arquivos foram montados sobre a estrutura de paginas separadas recebida em 21/10/2026.
+   Se tiver feito outras mudanças depois daquela data, una as mudanças no VS Code,
+   EM VEZ de substituir sem conferir.
+2. Adicione 992-cup.html, info2speed-992.css e as 7 imagens dentro de assets/.
+3. Mantenha todas as imagens antigas em assets/, especialmente as do GT3 R.
+4. Se sua hospedagem atual utiliza /campeonatos/ em vez de campeonatos.html,
+   atualize tambem a pagina efetivamente usada pela hospedagem.
+5. Abra index.html, garagem.html, 992-cup.html e campeonatos.html no navegador.
+6. Depois publique no GitHub Pages.
+
+RESULTADOS REGISTRADOS
+- GT3 Mosport (13/10): Felipe Bassani C1 DNS/C2 DNS; Rogerio Pavan C1 DNF/C2 DNF.
+- GT3 The Bend (27/10): Felipe Bassani C1 DNS/C2 DNS; Rogerio Pavan C1 DNS/C2 DNS (informado pela equipe).
+- Proxima GT3: Spa-Francorchamps 10/11.
+- 992 Cup Okayama e Mount Panorama: preservados os resultados informados.
+- 992 Cup Austin (26/10): Daniel Ferreira C1 P16 geral/P6 ProAm; C2 P12 geral/P6 ProAm (informado pela equipe).
+- Ranking 992 Cup apos 3/6 etapas: Daniel Ferreira P5 ProAm, 136 pontos.
+- Proxima 992 Cup: Algarve 09/11.
+- F4 ProAm 2026: resultados das 6 etapas preservados e titulo de Daniel mantido.
+
+FONTES
+https://www.f1bc.com/championships/694
+https://www.f1bc.com/championships/698
+https://www.f1bc.com/news/results/championship/4821
+https://www.f1bc.com/news/results/championship/4845
+
+OBS. A foto mostra numero 97 e nome Bassani no carro, porque foi capturada
+na conta do iRacing. Esses dados nao devem ser confundidos com inscricao
+do Daniel Ferreira, que pode usar outros identificadores na competicao.
+
+ATUALIZACAO 02/11/2026 (RESULTADOS INFORMADOS PELO USUARIO)
+- Pagina campeonatos.html atualizada com Austin e The Bend.
+- Dados de ranking ja existentes foram preservados, sem recalcular pontos.
+- Nao houve publicacao automatica no site.
