@@ -2699,3 +2699,22 @@ html {
   #header.tem-menu-mobile nav a::after { display: none; }
   #header.tem-menu-mobile nav a:last-child { border-bottom: none; }
 }
+
+/* Info2Speed | melhorias novembro 2026 */
+.i2s-race-update{max-width:1240px;margin:0 auto;padding:64px 28px 34px}
+.i2s-race-update__top{margin-bottom:24px}
+.i2s-eyebrow{color:#39ff14;font-size:.75rem;font-weight:800;letter-spacing:.18em}
+.i2s-race-update h2{font-size:clamp(1.7rem,3.6vw,2.8rem);letter-spacing:-.035em;margin:10px 0}
+.i2s-race-update__top p{color:#abb7aa;line-height:1.65;max-width:720px}
+.i2s-race-update__grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:18px}
+.i2s-race-tile{background:linear-gradient(145deg,#152016,#0b0d0b 70%);border:1px solid #334532;border-radius:18px;padding:28px;display:flex;flex-direction:column;align-items:flex-start;gap:12px}
+.i2s-race-tile>span{font-size:.75rem;letter-spacing:.14em;font-weight:800;color:#39ff14}
+.i2s-race-tile h3{font-size:clamp(1.3rem,2.5vw,2rem);line-height:1.12;margin:0}
+.i2s-race-tile p{font-weight:800;font-size:1rem;margin:0}
+.i2s-race-tile small,.i2s-muted{color:#a8b6a8;line-height:1.6}
+.i2s-race-tile a{color:#39ff14;text-decoration:none;font-size:.82rem;font-weight:800;margin-top:10px}
+.i2s-race-tile a:hover{text-decoration:underline}
+.campeonatos-navegacao{position:relative;display:flex;flex-wrap:wrap;gap:10px}
+.campeonatos-navegacao a:focus-visible,.i2s-race-tile a:focus-visible{outline:2px solid #39ff14;outline-offset:4px}
+@media(max-width:700px){.i2s-race-update{padding:42px 18px 20px}.i2s-race-update__grid{grid-template-columns:1fr}.i2s-race-tile{padding:22px}}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
