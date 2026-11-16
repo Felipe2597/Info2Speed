@@ -2718,3 +2718,8 @@ html {
 .campeonatos-navegacao a:focus-visible,.i2s-race-tile a:focus-visible{outline:2px solid #39ff14;outline-offset:4px}
 @media(max-width:700px){.i2s-race-update{padding:42px 18px 20px}.i2s-race-update__grid{grid-template-columns:1fr}.i2s-race-tile{padding:22px}}
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+
+/* Espaçamento superior da página Campeonatos */
+.inner-page:has(#campeonatos) {
+    padding-top: 100px;
+}
