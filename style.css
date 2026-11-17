@@ -2723,3 +2723,62 @@ html {
 .inner-page:has(#campeonatos) {
     padding-top: 100px;
 }
+
+
+/* =========================================================
+   PÁGINA EQUIPE — cards e páginas internas (Info2Speed)
+   Estilos isolados para não interferir nas outras páginas.
+   ========================================================= */
+.equipe-page { min-height: 75vh; background: #070907; }
+.equipe-intro {
+    padding: 185px 8% 65px;
+    text-align: center;
+    background: radial-gradient(ellipse at top, #153010 0%, #080b07 48%, #070907 85%);
+}
+.equipe-kicker { color: #39ff14; font-size: .8rem; font-weight: 800; letter-spacing: .24em; }
+.equipe-intro h1 { margin: 15px 0 22px; font-size: clamp(2.1rem, 5vw, 4rem); line-height: 1.15; letter-spacing: .055em; }
+.equipe-acento { display: block; width: 125px; height: 4px; margin: 0 auto 24px; background: #39ff14; border-radius: 4px; }
+.equipe-intro > p:last-child { max-width: 690px; margin: 0 auto; color: #c4c4c4; line-height: 1.8; font-size: 1.05rem; }
+.equipe-conteudo { max-width: 1230px; margin: 0 auto; padding: 35px 28px 100px; }
+.equipe-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 24px; }
+.equipe-card {
+    min-height: 305px; display: flex; flex-direction: column; justify-content: space-between;
+    padding: 32px; position: relative; overflow: hidden; text-decoration: none;
+    border: 1px solid rgba(57,255,20,.22); border-radius: 18px;
+    background: linear-gradient(140deg, #152010, #0b0d0a 65%, #070807);
+    transition: transform .25s, border-color .25s, box-shadow .25s;
+}
+.equipe-card::before { content: ''; position: absolute; width: 200px; height: 200px; right: -65px; top: -80px; background: radial-gradient(circle, rgba(57,255,20,.13), transparent 70%); pointer-events: none; }
+.equipe-card:hover, .equipe-card:focus-visible { transform: translateY(-6px); border-color: #39ff14; box-shadow: 0 15px 35px rgba(57,255,20,.12); }
+.equipe-card-num { color: #39ff14; font-size: .72rem; font-weight: 800; letter-spacing: .17em; }
+.equipe-card-corpo { position: relative; }
+.equipe-card h2 { margin: 0 0 12px; color: #fff; font-size: clamp(1.55rem, 2.6vw, 2.15rem); }
+.equipe-card p { color: #c7c7c7; line-height: 1.65; max-width: 420px; }
+.equipe-card-link { display: inline-block; margin-top: 22px; color: #39ff14; font-size: .78rem; font-weight: 800; letter-spacing: .13em; }
+.equipe-card-link span { font-size: 1.1rem; }
+.equipe-assinatura { margin-top: 55px; text-align: center; color: #bbb; }
+.equipe-assinatura strong { color: #39ff14; }
+.equipe-intro--interna { padding-bottom: 55px; }
+.equipe-voltar { display: inline-block; margin-bottom: 32px; color: #39ff14; text-decoration: none; font-size: .78rem; font-weight: 800; letter-spacing: .08em; }
+.equipe-voltar:hover { text-decoration: underline; }
+.equipe-artigo { max-width: 1000px; margin: 0 auto; padding: 50px 28px 110px; }
+.equipe-artigo-titulo { font-size: clamp(1.7rem, 3.4vw, 2.7rem); margin-bottom: 14px; }
+.equipe-artigo-lead { color: #b9b9b9; font-size: 1.1rem; line-height: 1.8; margin-bottom: 38px; }
+.equipe-artigo > h2:not(.equipe-artigo-titulo) { color: #fff; margin: 36px 0 12px; font-size: 1.45rem; }
+.equipe-artigo > p { color: #ccc; line-height: 1.85; margin-bottom: 16px; }
+.equipe-nota { color: #9f9f9f !important; font-size: .93rem; font-style: italic; }
+.equipe-perfis, .equipe-marcos { display: grid; gap: 22px; }
+.equipe-perfis { grid-template-columns: repeat(2, minmax(0,1fr)); }
+.equipe-perfil, .equipe-marcos article { padding: 30px; border: 1px solid #293729; border-radius: 16px; background: #101410; }
+.equipe-perfil-etiqueta, .equipe-marcos article > span { color: #39ff14; font-size: .75rem; font-weight: 800; letter-spacing: .12em; }
+.equipe-perfil h2, .equipe-marcos h2 { margin: 15px 0; font-size: 1.5rem; }
+.equipe-perfil p, .equipe-marcos p { color: #c5c5c5; line-height: 1.75; margin-bottom: 12px; }
+.equipe-voltar--final { margin: 42px 0 0; }
+@media (max-width: 768px) {
+    .equipe-intro { padding: 75px 22px 48px; }
+    .equipe-grid, .equipe-perfis { grid-template-columns: 1fr; }
+    .equipe-conteudo { padding: 18px 18px 75px; }
+    .equipe-card { min-height: 260px; padding: 26px; }
+    .equipe-artigo { padding: 35px 20px 75px; }
+    .equipe-perfil, .equipe-marcos article { padding: 23px; }
+}
